@@ -1,0 +1,238 @@
+/* css reset? */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* css variable */
+:root{
+    --navbar-height:59px;
+}
+/* Navigation bar */
+#navbar{
+   display: flex; 
+   align-items: center;
+   list-style: none;
+   position: relative;
+  font-family: 'Poppins', sans-serif;
+  position: sticky;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    opacity: 0.4;
+}
+/*navigationbar logo and image */
+#logo{
+    margin: 10px 34px;       
+}
+/*navigation bar list styling */
+#logo img{
+    height: 59px;
+    margin: 3px;
+    border-radius: 14px;
+}
+#navbar ul{
+    display: flex;  
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+display: block;
+padding: 33px 22px;
+border-radius: 30px;
+text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black ;
+    background-color: white;
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:  3px 200px;
+    height: 500px;
+    justify-content:center ;
+align-items: center;
+
+}
+#home::before{
+     content: "";
+    background: url('../png.1.jpg') no-repeat  center center/ cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    opacity: 0.89;
+}
+#home h1{
+    color: white;
+text-align: center;
+font-family: 'Nunito', sans-serif;
+}
+#home p{
+    color: white;
+font-size: 1.5rem;
+text-align: center;
+font-family: 'Nunito', sans-serif;
+}
+/* services section */
+#services{
+    margin: 80px;
+    display: flex;
+    
+
+}
+.box{
+    border: 2px solid brown;
+    padding: 34px;
+margin: 3px 6px;
+border-radius: 28px;
+background-color:skyblue;
+
+
+}
+.box img{
+    height: 160px;
+    /* when we do display block then the margin auto will work; */
+    margin: auto;
+    display: block;
+    border-radius: 14px;
+}
+.box p{
+     font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Section */
+.clients-section {
+  padding: 60px 0;
+  text-align: center;
+  background-color: #fff;
+}
+
+/* Heading */
+.clients-heading {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Background image container */
+.clients-bg {
+    content: "";
+  background-image: url('../bg.jpg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+  height: 800px;
+  opacity: 1.0;
+}
+
+/* Logos row */
+.client-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+/* Logos */
+.client-logos img {
+  width: 100px;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+}
+#contact{
+position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(../png.jpg);
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 22px;
+    
+}
+#contact-box{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+border-radius: 9px;
+font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+font-size: 1.3rem;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* utility classes */
+.h-primary{
+     font-family: 'Poppins', sans-serif;
+    font-size: 3.8rem;
+    padding: 12px;
+    padding-top: 100px;
+    
+}
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+     font-family: 'Poppins', sans-serif;
+    
+}
+.btn{
+    color: white;
+    background-color: brown;
+    margin: 17px;
+    padding: 6px 20px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
+
+
+
+
+
